@@ -1,0 +1,59 @@
+@charset "UTF-8";
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body header {
+  width: 500px;
+  text-align: center;
+  margin: 1.5em 0;
+  font-size: 2em;
+}
+
+body img {
+  width: 700px;
+  margin: 2em 0 4em;
+}
+
+body blockquote {
+  width: 500px;
+  -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  margin: 1.5em 0px .75em -1.5em;
+  padding: .75em .5em .75em 1em;
+  background: #fff;
+  border-left: 0.5em solid #DDD;
+  font-size: 1em;
+  line-height: 1.5;
+  color: #777;
+}
+
+body blockquote::before {
+  display: block;
+  height: 0;
+  content: "“";
+  margin-left: -.95em;
+  font: italic 400%/1 Cochin,Georgia,"Times New Roman", serif;
+  color: #999;
+}
+
+body blockquote p {
+  margin: 0;
+}
+
+body blockquote footer {
+  margin-bottom: 0;
+  font-size: 1em;
+  line-height: 1.5;
+  display: block;
+}
+/*# sourceMappingURL=main.css.map */

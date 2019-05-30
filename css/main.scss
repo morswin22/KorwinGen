@@ -1,0 +1,51 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    header {
+        width: 500px;
+        text-align: center;
+        margin: 1.5em 0;
+        font-size: 2em;
+    }
+
+    img {
+        width: 700px;
+        margin: 2em 0 4em;
+    }
+
+    blockquote {
+        width: 500px;
+    
+        box-shadow: 0 0 6px rgba(0,0,0,0.5);
+        margin: 1.5em 0px .75em -1.5em;
+        padding: .75em .5em .75em 1em;
+        background: #fff;
+        border-left: 0.5em solid #DDD;
+        font-size: 1em;
+        line-height: 1.5;
+        color: #777;
+    
+        &::before {
+            display: block;
+            height: 0;
+            content: "“";
+            margin-left: -.95em;
+            font: italic 400%/1 Cochin,Georgia,"Times New Roman", serif;
+            color: #999;
+        }
+
+        p {
+            margin: 0;
+        }
+    
+        footer {
+            margin-bottom: 0;
+            font-size: 1em;
+            line-height: 1.5;
+            display: block;
+        }
+    }
+
+}
