@@ -112,4 +112,23 @@ body blockquote footer {
   line-height: 1.5;
   display: block;
 }
+
+body span {
+  display: block;
+  position: fixed;
+  top: 50%;
+  height: 40px;
+  width: 40px;
+  right: -40px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-image: url("/img/reload.gif");
+  background-size: contain;
+  -webkit-transition: right 300ms ease;
+  transition: right 300ms ease;
+}
+
+body span.visible {
+  right: 30px;
+}
 /*# sourceMappingURL=main.css.map */

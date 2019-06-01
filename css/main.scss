@@ -53,7 +53,7 @@ body {
             width: calc(100% - 3.5em);
             margin: 1.5em -1.5em .75em 0px;
         }
-        
+
         box-shadow: 0 0 6px rgba(0,0,0,0.5);
         margin: 1.5em 0px .75em -1.5em;
         padding: .75em .5em .75em 1em;
@@ -84,6 +84,23 @@ body {
             font-size: 1em;
             line-height: 1.5;
             display: block;
+        }
+    }
+
+    span {
+        display: block;
+        position: fixed;
+        top: 50%;
+        height: 40px;
+        width: 40px;
+        right: -40px;
+        transform: translateY(-50%);
+        background-image: url('/img/reload.gif');
+        background-size: contain;
+        transition: right 300ms ease;
+
+        &.visible {
+            right: 30px;
         }
     }
 
