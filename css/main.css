@@ -87,12 +87,6 @@ body blockquote {
   }
 }
 
-@media (max-width: 450px) {
-  body blockquote {
-    font-size: 1.2em;
-  }
-}
-
 body blockquote::before {
   display: block;
   height: 0;
