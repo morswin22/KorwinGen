@@ -1,9 +1,22 @@
 const paragraph = document.querySelector('blockquote p');
+let lastGenerated = [];
 
 function generate() {
     let quote = '';
+    let level = 0;
     for (let section of data) {
-        quote += section[Math.floor(Math.random()*section.length)];
+        if (lastGenerated[level]) {
+            let selection;
+            do {
+                selection = Math.floor(Math.random()*section.length);
+            } while (selection == lastGenerated[level]);
+            lastGenerated[level] = selection;
+            quote += section[selection];
+        } else {
+            lastGenerated[level] = Math.floor(Math.random()*section.length);
+            quote += section[lastGenerated[level]];
+        }
+        level++;
     } 
     paragraph.innerHTML = quote;
 }
